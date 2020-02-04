@@ -39,17 +39,17 @@ export default (state = INIT_STATE, action) => {
   switch (action.type) {
 
     case ADD: {
-      return { ...state, participant: [...state.participants, { ...action.payload, id: short.generate() }] }
+      return { ...state, participants: [...state.participants, { ...action.payload, id: short.generate() }] }
     }
 
     case DELETE: {
       const remaining = state.participants.filter(p => p.id !== action.payload);
-      return { ...state, participant: remaining }
+      return { ...state, participants: remaining }
     }
 
     case UPDATE: {
       const remaining = state.participants.filter(p => p.id !== action.payload.id);
-      return { ...state, participant: [...remaining, action.payload] }
+      return { ...state, participants: [...remaining, action.payload] }
     }
 
     case SORT: {

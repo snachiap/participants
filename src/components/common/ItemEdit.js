@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { TextField } from '@material-ui/core';
 
-const ItemEdit = ({ text, label, error, style, onChange }) => (
+const ItemEdit = ({ text, label, error, style, onChange, onBlur }) => (
   <TextField
     error={error}
     label={label}
@@ -10,6 +10,7 @@ const ItemEdit = ({ text, label, error, style, onChange }) => (
     variant="filled"
     size="small"
     style={style}
+    onBlur={onBlur}
     onChange={e => onChange(e.target.value)}
   />
 )
