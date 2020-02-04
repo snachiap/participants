@@ -22,7 +22,7 @@ const SampleAppBar = () => {
     <AppBar position="static" className={classes.root}>
       <Toolbar className={classes.toolBar}>
         <img src={logo} className={classes.icon} alt="logo" width="32" height="32" />
-        <Typography variant="h4">Nord Software</Typography>
+        <Typography id="app-header-text" variant="h4">Nord Software</Typography>
       </Toolbar>
     </AppBar>
   );

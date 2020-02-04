@@ -17,6 +17,7 @@ const Signup = ({ onSuccess }) => {
         <TextField
           style={{ width: 300 }}
           variant="outlined"
+          id="app-username"
           size="small"
           label="Username"
           value={username}
@@ -27,6 +28,7 @@ const Signup = ({ onSuccess }) => {
         <TextField
           style={{ width: 300 }}
           variant="outlined"
+          id="app-password"
           size="small"
           type="password"
           label="Password"
@@ -36,14 +38,14 @@ const Signup = ({ onSuccess }) => {
       </Grid>
 
       <Grid item style={{ padding: 10 }}>
-        <Button style={{ width: 100 }} onClick={login}>
+        <Button style={{ width: 100 }} onClick={login} id="app-login-button">
           Login
         </Button>
       </Grid>
 
       {error.length > 0 ? (
         <Grid item style={{ padding: 10 }}>
-          <Typography variant="body2" color="error">
+          <Typography variant="body2" color="error" id="app-login-error">
             {error}
           </Typography>
         </Grid>
