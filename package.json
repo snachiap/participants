@@ -50,5 +50,8 @@
         }
       }
     ]
+  },
+  "devDependencies": {
+    "cypress": "^3.8.3"
   }
 }
