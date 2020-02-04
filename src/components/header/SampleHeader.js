@@ -18,14 +18,14 @@ const SampleHeader = ({ title }) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.titleContainer} >
+    <div className={classes.titleContainer}>
       <Typography className={classes.title}>{title}</Typography>
-    </div >
-  )
-}
+    </div>
+  );
+};
 
 export default SampleHeader;
 
 SampleHeader.propTypes = {
   title: Proptypes.string.isRequired
-}
+};

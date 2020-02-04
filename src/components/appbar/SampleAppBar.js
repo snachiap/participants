@@ -18,7 +18,6 @@ const useStyles = makeStyles(theme => ({
 const SampleAppBar = () => {
   const classes = useStyles();
 
-
   return (
     <AppBar position="static" className={classes.root}>
       <Toolbar className={classes.toolBar}>
@@ -26,7 +25,7 @@ const SampleAppBar = () => {
         <Typography variant="h4">Nord Software</Typography>
       </Toolbar>
     </AppBar>
-  )
-}
+  );
+};
 
 export default SampleAppBar;

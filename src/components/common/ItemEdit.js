@@ -13,10 +13,10 @@ const ItemEdit = ({ text, label, error, style, onChange, onBlur }) => (
     onBlur={onBlur}
     onChange={e => onChange(e.target.value)}
   />
-)
+);
 
 export default ItemEdit;
 
 ItemEdit.propTypes = {
   text: PropTypes.string.isRequired
-}
+};
