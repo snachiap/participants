@@ -37,10 +37,9 @@ const ParticipantAdd = () => {
   const [errors, setErrors] = useState({})
   const [participant, setParticipant] = useState(initialParticipant);
 
-  const onChange = (key, value) => setParticipant({
-    ...participant,
-    [key]: value
-  })
+  const onChange = (key, value) => 
+    setParticipant({ ...participant, [key]: value })
+  
 
   const save = () => {
     dispatch(add(participant));
@@ -67,6 +66,7 @@ const ParticipantAdd = () => {
   }
 
   const { name, email, phone } = participant;
+  const valid = name.length > 0 && email.length > 0 && phone.length > 0;
   return (
     <Paper className={classes.container}>
       <TextField
@@ -100,7 +100,8 @@ const ParticipantAdd = () => {
         onBlur={isValidPhone}
         onChange={e => onChange('phone', e.target.value)}
       />
-      <Button variant="contained" className={classes.button} onClick={save}>
+      <Button disabled={!valid}
+        variant="contained" className={classes.button} onClick={save}>
         Add New
       </Button>
     </Paper>
