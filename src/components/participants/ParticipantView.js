@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, TableRow, TableCell, InputBase, Grid, IconButton, Typography } from '@material-ui/core';
+import { makeStyles, TableRow, TableCell, Grid, IconButton, Typography } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
 import CreateIcon from '@material-ui/icons/Create';
 import { useDispatch } from 'react-redux';
