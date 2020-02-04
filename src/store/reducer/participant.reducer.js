@@ -1,7 +1,7 @@
 import short from 'short-uuid';
 import { ADD, DELETE, UPDATE, SORT, SET_EDIT } from '../actions/participant.actions';
 
-const data = [
+export const data = [
   { name: 'Adrienne', email: 'akairns0@hc360.com', phoneNumber: '703266043747' },
   { name: 'Susie', email: 'sdufour1@desdev.cn', phoneNumber: '792902056101' },
   { name: 'Taddeo', email: 'tcuppleditch2@diigo.com', phoneNumber: '757983148156' },
