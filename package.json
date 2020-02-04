@@ -1,4 +1,5 @@
 {
+  "homepage": "https://snachiap.github.io/participants/",
   "name": "sample",
   "version": "0.1.0",
   "private": true,
@@ -18,6 +19,8 @@
     "short-uuid": "^3.1.1"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -52,6 +55,7 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^3.8.3"
+    "cypress": "^3.8.3",
+    "gh-pages": "^2.2.0"
   }
 }
